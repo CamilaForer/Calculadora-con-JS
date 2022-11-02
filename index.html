@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="intro">
+        <h1>Bienvenido</h1>
+        <h3>
+          ¡Aquí encontraras una calculadora digital, capaz de ayudarte con
+          operaciones sencillas!
+        </h3>
+      </section>
+      <section class="container-calculator">
+        <table class="calculadora">
+          <tr>
+            <td colspan="4"><span id="resultado"></span></td>
+          </tr>
+          <tbody class="teclas">
+            <tr>
+              <td><button id="reset">C</button></td>
+              <td><button id="division">/</button></td>
+              <td><button id="multiplicacion">*</button></td>
+              <td rowspan="2"><button id="resta">-</button></td>
+            </tr>
+            <tr>
+              <td><button id="uno">1</button></td>
+              <td><button id="dos">2</button></td>
+              <td><button id="tres">3</button></td>
+            </tr>
+            <tr>
+              <td><button id="cuatro">4</button></td>
+              <td><button id="cinco">5</button></td>
+              <td><button id="seis">6</button></td>
+              <td rowspan="2"><button id="suma">+</button></td>
+            </tr>
+            <tr>
+              <td><button id="siete">7</button></td>
+              <td><button id="ocho">8</button></td>
+              <td><button id="nueve">9</button></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button id="cero">0</button></td>
+              <td colspan="2"><button id="igual">=</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

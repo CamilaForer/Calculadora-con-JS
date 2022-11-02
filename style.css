@@ -1,0 +1,73 @@
+.container{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  font-size: 40px;
+}
+.intro{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  text-align: center;
+}
+.calculadora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto;
+  padding:20px;
+  background-color:#D47A7A;
+  width:450px;
+  height:590px;
+  border-radius: 25px;
+  margin-top: 3%; 
+}
+.teclas{
+  background-color: #E3B7B7;
+  width:390px;
+  height: 450px;
+  border-radius: 15px;
+  padding: 2.5%;
+  margin-bottom: 1%; 
+}
+.calculadora td button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:93px;
+  height: 74px;
+  font-size: 35px;
+  background: transparent;
+  border:1px solid white;
+  color: white;
+  cursor: pointer;
+}
+#reset, #division, #multiplicacion, #resta,#suma,#igual{
+  background: #D99595;
+  border:1px solid #BD8484;
+  font-weight: bold;
+  font-size:45px;
+  vertical-align: middle;
+}
+#cero, #igual{
+  width: 190px;
+}
+#suma, #resta{
+  height: 152px;
+}
+#resultado{
+  display:block;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  width:410px;
+  height: 100px;
+  line-height: 100px;
+  background-color:#fff;
+  border-radius: 25px;
+  margin-top: 1%;
+}
