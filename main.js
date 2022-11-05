@@ -5,12 +5,12 @@ var operacion;
 var changeBotton=false;
 //Modo oscuro
 
-const btnSwitch= document.querySelector('#switch');
+const btnSwitch= document.querySelector('#switch');//querySelector para traer del documento el elemento con el id switch
 /*const =document.querySelector('');
 const =document.querySelector('');*/
 //
-btnSwitch.addEventListener('click',() => { 
- // document.body.classList.toggle('dark');//Metodo toggle para colocar una clase al dar click
+btnSwitch.addEventListener('click',() => { //Asignar un evento con la funcion addEventListener a un elemento html
+ // document.body.classList.toggle('dark');//Metodo toggle para alternar la presencia una clase al dar click
   btnSwitch.classList.toggle('active');
   changeBotton=!changeBotton //Operador not para cambiar el estado de la variable a true
   if(changeBotton){ 
@@ -34,7 +34,7 @@ btnSwitch.addEventListener('click',() => {
 
 function init(){
   //variables
-  var resultado = document.getElementById('resultado');
+  var resultado = document.getElementById('resultado');//se guarda en una variable el elemento de cada uno de los id llamados
   var reset = document.getElementById('reset');
   var suma = document.getElementById('suma');
   var resta = document.getElementById('resta');
@@ -54,7 +54,7 @@ function init(){
 }
 //Eventos de click
 uno.onclick = function(e){
-  resultado.textContent = resultado.textContent  + "1";
+  resultado.textContent = resultado.textContent  + "1";//con el numero guardado en variale al hacer click se va a mostrar
 }
 dos.onclick = function(e){
   resultado.textContent = resultado.textContent  + "2";
@@ -87,7 +87,7 @@ cero.onclick = function(e){
 reset.onclick = function(e){
   resetear();
 }
-suma.onclick = function(e){
+suma.onclick = function(e){//Función donde se le asigna a operandoa el valor de resultado y la operación según corresponda seguidamente ejecuta la función limpiar()
   operandoa = resultado.textContent;
   operacion = "+";
   limpiar();
@@ -107,21 +107,21 @@ division.onclick = function(e){
   operacion = "/";
   limpiar();
 }
-igual.onclick = function(e){
+igual.onclick = function(e){//asigna a operandob el valor de resultado, procede a ejecutar resolver()
   operandob = resultado.textContent;
   resolver();
 }
-function limpiar(){
+function limpiar(){//Cambia el valor de resultado a un string vacio
   resultado.textContent = "";
 }
 
-function resetear(){
+function resetear(){//deja los valores de operandoa y operandob en 0, mientras que resultado y operación, los deja vacios
   resultado.textContent = "";
   operandoa = 0;
   operandob = 0;
   operacion = "";
 }
-function resolver(){
+function resolver(){//Se establecen los casos para cada operación donde tomada los valores de operandoa y operandob para ejecutarlas
   var res = 0;
   switch(operacion){
     case "+":
@@ -140,6 +140,6 @@ function resolver(){
       res = parseFloat(operandoa) / parseFloat(operandob);
       break;
   }
-  resetear();
+  resetear();//Asigna el valor de res que es 0 a resultado
   resultado.textContent = res;
 }

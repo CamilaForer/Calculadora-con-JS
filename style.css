@@ -19,6 +19,7 @@ body{
   font-family: 'Inter', sans-serif;
   transition: .3 ease all;
 }
+/*Estilos botón modo oscuro*/
 .mode{
   width: 60%;
   display: flex;
@@ -66,12 +67,9 @@ h3{
   border-radius: 10px;
   transition: .3s ease all;
 }
+/*Estilos calculadora*/
 .container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
+  padding: 2%;
 }
 h1{
   font-size: 50px;
@@ -88,6 +86,7 @@ p{
   padding: 0 5%;
   text-align: center;
 }
+/*Estilos calculadora*/
 .calculadora{
   width: 90vw;
   margin:0 auto;
@@ -95,8 +94,9 @@ p{
   height:90vh;
   border-radius: 10px;
   border-spacing: 5px;
+  padding: .7%;
 }
-
+/*Fondo teclas*/
 .teclas{
   background-color: var(--fondo-teclas);
   display:table;
@@ -106,6 +106,7 @@ p{
   padding: 2.5%;
   margin: auto;
 }
+/*Teclas de la calculadora*/
 .calculadora td button{
   display:flex;
   justify-content: center;
