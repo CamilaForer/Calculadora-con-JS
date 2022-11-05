@@ -89,35 +89,39 @@ p{
   text-align: center;
 }
 .calculadora{
-  width: 100%;
+  width: 90vw;
   margin:0 auto;
-  padding:20px;
   background-color:var(--calculadora);
   height:90vh;
-  border-radius: 25px;
+  border-radius: 10px;
   border-spacing: 5px;
 }
+
 .teclas{
   background-color: var(--fondo-teclas);
   display:table;
-  width:95%;
-  height:90%;
-  border-radius: 15px;
+  width:93%;
+  height:87%;
+  border-radius: 10px;
   padding: 2.5%;
+  margin: auto;
 }
 .calculadora td button{
   display:flex;
   justify-content: center;
   align-items: center;
   width:100%;
-  height:90%;
-  font-size: 35px;
+  height:100%;
+  font-size:clamp(2rem,3vw,3rem);
   background:var(--numeros);
   border:1px solid var(--borde-teclas);
   color: white;
   cursor: pointer;
+  transition: .2s ease-in;
 }
-
+.calculadora td button:hover{
+  background: var(--operadores);
+}
 #reset, #division, #multiplicacion, #resta,#suma,#igual{
   background: var(--operadores);
   border:1px solid var(--borde-operadores);
@@ -127,16 +131,21 @@ p{
   width: 100%;
   padding: 0;
 }
-
-#resultado{
-  display:block;
+#reset:hover, #division:hover, #multiplicacion:hover, #resta:hover,#suma:hover,#igual:hover{
+  background-color: var(--calculadora);
+}
+td #resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 40px;
-  width:90vw;
+  font-size:clamp(2rem,3vw,3rem);
+  width:98%;
   height: 10vh;
   line-height: 100px;
   background-color:#fff;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin: auto;
 }
 /*@media (max-width:490px) {
   #resultado{
