@@ -9,44 +9,41 @@
   </head>
   <body>
     <main class="container">
-      <section class="intro">
-        <h1>Bienvenido</h1>
-        <p>
-          ¡Aquí encontraras una calculadora digital, capaz de ayudarte con
-          operaciones sencillas!
-        </p>
-      </section>
       <section class="container-calculator">
+        <div class="mode"><h3>Modo oscuro</h3>
+        <button class="switch" id="switch">
+        </button>
+        </div>
         <table class="calculadora">
           <tr>
-            <td colspan="4"><span id="resultado"></span></td>
+            <td colspan="4"><div id="resultado"></div></td>
           </tr>
           <tbody class="teclas">
             <tr>
-              <td><button id="reset">C</button></td>
-              <td><button id="division">/</button></td>
-              <td><button id="multiplicacion">*</button></td>
-              <td rowspan="2"><button id="resta">-</button></td>
+              <td><button class="calculator_keys" id="reset">C</button></td>
+              <td><button class="calculator_keys" id="division">/</button></td>
+              <td><button class="calculator_keys" id="multiplicacion">*</button></td>
+              <td rowspan="2"><button class="calculator_keys" id="resta">-</button></td>
             </tr>
             <tr>
-              <td><button id="uno">1</button></td>
-              <td><button id="dos">2</button></td>
-              <td><button id="tres">3</button></td>
+              <td><button data-number="1"class="calculator_keys" id="uno">1</button></td>
+              <td><button class="calculator_keys" id="dos">2</button></td>
+              <td><button class="calculator_keys" id="tres">3</button></td>
             </tr>
             <tr>
-              <td><button id="cuatro">4</button></td>
-              <td><button id="cinco">5</button></td>
-              <td><button id="seis">6</button></td>
-              <td rowspan="2"><button id="suma">+</button></td>
+              <td><button class="calculator_keys" id="cuatro">4</button></td>
+              <td><button class="calculator_keys" id="cinco">5</button></td>
+              <td><button class="calculator_keys" id="seis">6</button></td>
+              <td rowspan="2"><button data-operation="add" class="calculator_keys" id="suma">+</button></td>
             </tr>
             <tr>
-              <td><button id="siete">7</button></td>
-              <td><button id="ocho">8</button></td>
-              <td><button id="nueve">9</button></td>
+              <td><button class="calculator_keys" id="siete">7</button></td>
+              <td><button class="calculator_keys" id="ocho">8</button></td>
+              <td><button class="calculator_keys" id="nueve">9</button></td>
             </tr>
             <tr>
-              <td colspan="2"><button id="cero">0</button></td>
-              <td colspan="2"><button id="igual">=</button></td>
+              <td colspan="2"><button class="calculator_keys" id="cero">0</button></td>
+              <td colspan="2"><button class="calculator_keys" id="igual">=</button></td>
             </tr>
           </tbody>
         </table>
